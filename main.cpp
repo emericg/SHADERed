@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
 		return 0;
 
 #if defined(__linux__) || defined(__unix__)
-	bool linuxUseHomeDir = false;
+	bool linuxUseHomeDir = true;
 
 	// currently the only supported argument is a path to set the working directory... dont do this check if user wants to explicitly set the working directory,
 	// TODO: if more arguments get added, use different methods to check if working directory is being set explicitly
